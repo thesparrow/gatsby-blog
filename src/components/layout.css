@@ -12,6 +12,7 @@
     --darkGrey: #8e8e8e; 
     --darkRed: #f15025;
     --darkGreen: #4f7942;
+    --lightSeaGreen: #20B2AA; 
 }
 
 body {
@@ -27,5 +28,8 @@ body {
     font-size: 1.25rem;
     color: var(--mainWhite);
     margin: 2rem 0;
-
+}
+.likes{
+    color: var(--lightSeaGreen);
+    margin: 3rem 0;
 }
