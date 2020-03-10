@@ -1,12 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react';
 
-const likes = () => {
+const Likes = () => {
+    const [count, setCount] = useState(0);
+
     return (
         <div className="likes">
             <h3>Click if you like the post.</h3>
-            <h3>likes</h3>
-            <button>click me</button>
+            <h3> likes {count} </h3>
+            <button onClick={()=> setCount(count+1)}>
+                click me</button>
         </div>
-    )
+    );
 }
-export default likes 
+export default Likes 
