@@ -5,12 +5,13 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  Gatsby's Blog using MDX markup and GraphQL.
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+The project kicked off with basic markup - setup was a little bit time consuming, but now the static blog site 
+is easy to create new pages from the GraphQL data.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+Take a look at how the basic set up. Let me know if you have questions. 
 
 ## 🚀 Quick start
 
@@ -93,7 +94,5 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
