@@ -1,0 +1,160 @@
+---
+title: 4th post
+slug: forth-post
+image: ./images/victoryDay.png
+date: 2020-05-08
+author: anna shilova
+---
+
+import Likes from "../../components/likes.js"
+
+# Build your first site
+
+Follow me for a simple tutorial - we'll learn about structures of a web page and how to add simple elements to create a recipe page! Goals for this tutorial is learn the fundamentals of a web page so you can learn how to create one - from scratch!
+
+A lot of websites are used to convey information - or create a living breathing information of news or interaction. The best example of how site is structured is a good old fashioned paper newspaper.
+Let's look at an example.
+
+Notice that the newspaper has a hierarchical structure - arranged in the order of rank - in order to present the information to the reader. There is the **head** - it contains the name of the newspaper "Journal Courier", though not visible there is also the date of the paper in the head as sub, or **child**, element: under the title the date stands as: May 8th, 1945. Then there is the **body** of the newspaper that is the container for all the information the reader will face head on. Then follows the **header** with the most important news of the day - "Victory in Europe Day". For context, this was the end of World War II - this is the most important news of the day - and the information is conveyed with a bold header - with the largest font to grab the readers' attention. Following is a smaller header - with more description of the event - "Allied Flags Freedom Fly Over All West Fronts." The newspapers is then arranged in mosaic style **articles** with a **title** and the **paragraph** that contain the articles and more information. Notice that arrangement of the news articles is like an **unordered** list - no numbering, and varied length of the articles. Each article has either a bold title or a soft - muted - title. The bold articles and titles grab the attention first - while the muted catch the eye as secondary.
+
+A web page has a very similar structure - or layout - to that of a newspaper. The browser sees html tags and renders or draws them on the screen - or web browser (Chrome, Firefox). HTML uses tags, characters that reside in angled brackets. They act as containers or mailboxes that contain something specific about the contents inside. All tags come in pairs - usually - with an beginning and an ending tag. These elements have specific names - such as `<h1>` for header 1, `<body>` for body or contents of the page. `<p>` for paragraph - that just like the newspaper will have a lot of text following in that container. `<img>` will contain an image to diversify and further create an interesting representation.
+
+Now let's build a recipe - how would you present a recipe in a word document? Let’s give it a try :
+
+## From A to Zucchini
+
+--
+
+### Simple recipe for creating a refreshing ice-cream at home!
+
+Here's a simple recipe for a great cool snack with pretty simple ingredients. It's
+yummy and vegan friendly.
+
+### Ingredients
+
+    • 1 15- ounce can full fat coconut milk
+    • 1/3 cup Swerve Sweetener
+    • 1 tsp espresso powder (optional - boosts chocolate flavour)
+    • 3 ounces sugar-free dark chocolate such as Lily's, chopped
+    • 1 tsp vanilla extract
+    • 2 medium California Avocados
+    • 1 1/2 tsp ground cinnamon
+    • 1/4 to 3/4 tsp chipotle powder
+
+Now let's something more - descriptive about our page! Let's say we are trying to make a page that describes how to make a recipe - for example of Mexican Avocado Ice Cream. So we will call our site, "From A to Zucchini" to show that it's a listing site of a diverse range of foods.
+
+```mdx
+<html>
+	<head>
+		<title>From A to Zucchini </title>
+	</head>
+
+	<body>
+		<header> From A to Zucchini </header>
+
+		<h6> Simple recipe for creating a refreshing ice-cream at home!</h6>
+		<p> Here's a simple recipe for a great cool snack with pretty simple ingredients. It's
+		yummy and vegan friendly.</p>
+
+	</body>
+
+</html>
+
+```
+
+Now, let's add an image to the page - for a better visual and incentive to follow through with the recipe.
+And - let's add a list of ingredients so that the users have an organized structure for what to look for when
+they are shopping at the store.
+
+```
+<html>
+	<head>
+		<title>From A to Zucchini </title>
+	</head>
+
+	<body>
+		<header> From A to Zucchini </header>
+
+		<h6> Simple recipe for creating a refreshing ice-cream at home!</h6>
+		<p> Here's a simple recipe for a great cool snack with pretty simple ingredients. It's
+		yummy and vegan friendly.</p>
+
+	</body>
+
+</html>
+
+```
+
+Now let's add some lists - of ingredients for our recipe. We will list for organizational structure. Here it is:
+
+```
+<html>
+	<head>
+		<title>From A to Zucchini </title>
+	</head>
+
+	<body>
+		<header> From A to Zucchini </header>
+
+		<h5> Simple recipe for creating a refreshing ice-cream at home!</h6>
+		<p> Here's a simple recipe for a great cool snack with pretty simple ingredients. It's
+		yummy and vegan friendly.</p>
+
+		<h6>Ingredients: </h6>
+
+		<ul>
+			<li>  1 15- ounce can full fat coconut milk</li>
+			<li>  1/3 cup Swerve Sweetener</li>
+			<li>  1 tsp espresso powder (optional - boosts chocolate flavour) </li>
+			<li>  3 ounces sugar-free dark chocolate such as Lily's, chopped  </li>
+			<li>  1 tsp vanilla extract </li>
+			<li>  2 medium California Avocados </li>
+			<li>  1 1/2 tsp ground cinnamon  </li>
+			<li> 1/4 to 3/4 tsp chipotle powder (depending on how spicy you like it. </li>
+		</ul>
+
+
+	</body>
+
+</html>
+
+```
+
+Let's add an image tag - and look at css. CSS are cascading style sheets that add more flavor and visual mark-up to our web pages. We first need to add a link to the css, next we create elements around the css. We'll do something very simple and easy. We will make the title stand out - with an orange bold letters highlighting the start of the word - and we will put a border line around the image - we will also shrink the image a bit. The css will be added to the header as a link - links are tags to link to external files. So let's take a quick look -
+
+```
+body {
+    font-family: "Verdana", Sans-serif;
+    font-size: 0.875em;
+    background-color: #ffffff;
+}
+.title {
+    box-sizing: border-box;
+    border: 10px solid#cccccc;
+    font-size: 1.5em;
+    margin: 10px;
+    text-align: center;
+    width: 35%;
+}
+.header-splash {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #ff6600;
+}
+img.recipe-img {
+    width: 35%;
+    height: 75%;
+    outline: 2px solid gray;
+    outline-offset: -10px;
+}
+
+```
+
+And that's it! If you open up your local host - you'll see that the site is live. Congrats on building your first site!
+Also you can find the entire source code:
+
+[here](https://github.com/thesparrow/site) on github
+
+If you liked what you saw - you can buy me a [coffee](https://www.buymeacoffee.com/anyabear)!
+
+<Likes> </Likes>
